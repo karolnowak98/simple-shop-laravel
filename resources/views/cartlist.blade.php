@@ -3,6 +3,7 @@
 <div class="custom-product">
     <div class="col-sm-10">
         <div class="trending-wrapper">
+            <a href="ordernow" class="btn btn-success">Zamów teraz</a><br/><br/>
             @foreach ($products as $item)
             <div class="row searched-item cart-list-devider">
                 <div class="col-sm-3">
@@ -18,13 +19,13 @@
                 </a>
                 </div>
                 <div class="col-sm-3">
-                    <button class="btn btn-warning">Usuń przedmiot</button>
+                    <a href="/removecart/{{$item->cart_id}} "class="btn btn-warning">Usuń przedmiot</a>
                 </div>
             </div>
             @endforeach
         </div>
+        <a href="ordernow" class="btn btn-success">Zamów teraz</a><br/><br/>
     </div>
 </div>
-
 @endsection
 
