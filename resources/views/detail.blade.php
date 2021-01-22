@@ -19,7 +19,6 @@
                 <input type="hidden" name="product_id" value={{$product['id']}}>
                 <button class="btn btn-success">Dodaj do koszyka</button>
             </form>
-            <button class="btn btn-warning">Kup teraz</button>
         </div>
         
     </div>

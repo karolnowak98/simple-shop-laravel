@@ -21,7 +21,7 @@ if(Session::has('user')){
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="#">Zamówienia</a></li>
+        <li class=""><a href="/myorders">Zamówienia</a></li>
       </ul>
       <form action="/search" class="navbar-form navbar-left">
         <div class="form-group">
@@ -30,17 +30,18 @@ if(Session::has('user')){
         <button type="submit" class="btn btn-default">Wyszukaj</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/cartlist">Koszyk({{$total}})</a></li>
+        <li><a href="/cartlist"><i class="fas fa-shopping-cart"> </i> Koszyk({{$total}})</a></li>
         @if(Session::has('user'))
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="/logout">Logout</a></li>
+          <li><a href="/logout">Wyloguj się</a></li>
         </ul>
       </li>
       @else
-      <li><a href="/login">Koszyk({{$total}})</a></li>
+      <li><a href="/login">Zaloguj się</a></li>
+      <li><a href="/register">Rejestracja</a></li>
       @endif
         
       </ul>

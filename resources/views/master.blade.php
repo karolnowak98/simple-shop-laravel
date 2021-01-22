@@ -12,7 +12,7 @@
         </script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+        <script src="https://kit.fontawesome.com/0028905297.js" crossorigin="anonymous"></script>
     </head>
     <body>
         {{View::make('header')}}
@@ -39,6 +39,10 @@
         .trending-item{
             float:left;
             width:20%;
+            text-decoration: none;
+        } 
+        .trending-item a:hover {
+            text-decoration: none;
         }
         .trending-wrapper{
             margin:30px;
@@ -53,6 +57,9 @@
             border-bottom: 1px solid #ccc;
             margin-bottom: 20px;
             padding-bottom: 20px;
+        }
+        .carousel-inner > .item > img {
+            margin: 0 auto;
         }
     </style>
 </html>
